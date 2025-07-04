@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Car Rental</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Find Your Perfect Ride</h2>
+        <p>Rent a car in minutes, no hassle</p>
+    </section>
+
+    <!-- Available Cars Section -->
+    <section id="cars" class="car-list">
+        <h2>Our Cars</h2>
+        <div class="car">
+            <img src="first car.jpg" alt="Car 1">
+            <h3>Swift Dzire</h3>
+            <p>$50/day</p>
+            <button>Rent Now</button>
+        </div>
+        <div class="car">
+            <img src="second img.jpg" alt="Car 2">
+            <h3>Scorpio</h3>
+            <p>$70/day</p>
+            <button>Rent Now</button>
+        </div>
+        <div class="car">
+            <img src="third img.jpg" alt="Car 3">
+            <h3>Innova</h3>
+            <p>$90/day</p>
+            <button>Rent Now</button>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="booking">
+        <h2>Book Your Car</h2>
+        <form id="booking-form">
+            <label for="pickup-date">Pickup Date</label>
+            <input type="date" id="pickup-date" required>
+
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date" required>
+
+            <label for="car-type">Select Car Type</label>
+            <select id="car-type" required>
+                <option value="Swift Dzire">Swift Dzire</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Innova">Innova</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch with us.</p>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Car Rental. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
